@@ -1,0 +1,81 @@
+p{
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(112, 128, 144, 0.8);
+    border-radius: 5px;
+}
+
+body{
+    background-color: #61707D;
+    background-image: url(code.jpg);
+    background-image: cover;
+}
+
+.header{
+    text-align: center;
+    font-family: Jaro;
+    font-size: 50px;
+    color: #40F99B;
+    text-shadow: 10px 15px 20px #32021F;
+
+}
+
+table{
+    border: 2px solid black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    background-color: slategray;
+}
+
+.description{
+    width: 60%;
+}
+
+th{
+    background-color: #44CCFF;
+    font-family: Jaro;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 0px 5px 20px #40F99B;
+    font-size: 30px;
+    font-family: caveat;
+    font-size: 50px;
+    background-color: rgba(112, 128, 144, 0.8);
+    border-radius: 5px;
+
+}
+
+
+#specificity{
+    height: auto;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 41.5px;
+    border-radius: 40px
+}
+
+#specificity:hover{
+    scale: 1.3;
+    transition: 200ms;
+}
+
+.selectors,
+.name,
+.Definition{
+    font-family: monospace;
+}
+
+
+

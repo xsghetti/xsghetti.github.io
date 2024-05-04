@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
+    <title>CSS Cheatsheet</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>CSS Cheatsheet</h1>
+    </div>
+
+    <div class="Selectors">
+        <h2>CSS Selectors & Specificity</h2>
+        <p>If there are two or more CSS rules that point to the same element, the selector with the highest specificity
+            value will "win", and its style declaration will be applied to that HTML element.</p>
+        <table>
+            <th>Selectors</th>
+            <th>Name</th>
+            <th class="description">Description</th>
+            <th>Specificity</th>
+            <tr>
+                <td class="selectors">#UniqueHeader</td>
+                <td class="name">ID Selection</td>
+                <td class="Definition">Selects a unique element with an ID attribute</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="selectors">.header</td>
+                <td class="name">Class Selection</td>
+                <td class="Definition">Selects elements with a specific class attribute.
+                <td>2</td>
+                </td>
+            <tr>
+                <td class="selectors">p, h1, div</td>
+                <td class="name">Type Selection</td>
+                <td class="Definition">Selects HTML elements based on the element name.</td>
+                <td>3</td>
+            </tr>
+            </tr>
+        </table>
+
+        <div class="DisplayProperties">
+            <div class="inline">
+                <h2>CSS Display Properties</h2>
+                <table>
+                    <thead>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="selectors">Inline</td>
+                            <td class="Definition">The <strong>inline</strong> display value turns any element into an
+                                inline element. These elements will appear on the same line without breaks, like
+                                <strong>&lt;span&gt;</strong> elements behave.</td>
+                        </tr>
+                        <tr>
+                            <td class="selectors">Block</td>
+                            <td class="Definition">The <strong>block</strong> display value makes an element a block
+                                element. Block elements start a new line and span the entire width of the viewport by
+                                default, like how <strong>&lt;div&gt;</strong> elements behave. There are also line
+                                breaks before and after these elements.</td>
+                        </tr>
+                        <tr>
+                            <td class="selectors">Inline Block</td>
+                            <td class="Definition">The <strong>inline-block</strong> value is a hybrid of inline and
+                                block. Elements assigned display: inline-block appear on the same line with other inline
+                                elements, a characteristic of inline elements. However, inline-block elements are also
+                                like block elements in that you can change their widths and heights with CSS.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+      
+
+</body>
+
+</html>
