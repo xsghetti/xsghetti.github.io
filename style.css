@@ -1,0 +1,17 @@
+.header{
+  font-family: Jaro;
+  text-align: center;
+
+}
+
+body{
+  background-color: slategray;
+}
+a{
+  color: black;
+  display: block;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px; 
+}
+
