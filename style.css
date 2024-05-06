@@ -1,17 +1,29 @@
 .header{
   font-family: Jaro;
   text-align: center;
+  color: #fffffe;
 
+}
+p{
+  color: #a7a9be;
+  text-align: center;
 }
 
 body{
-  background-color: slategray;
-}
+  background-color: #0f0e17;
+}                
 a{
-  color: black;
+  color: #ff8906;
   display: block;
   text-align: center;
   font-family: monospace;
-  font-size: 20px; 
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px 10px;
 }
-
+a:hover{
+  color: #f25f4c;
+  text-decoration: underline;
+}
