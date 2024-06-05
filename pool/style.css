@@ -9,6 +9,9 @@ header {
     color: #fff; 
     padding: 1em 0; 
     text-align: center; 
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
     animation: fadeIn 2s ease-in-out;
 }
 nav { 
@@ -16,6 +19,9 @@ nav {
     justify-content: center; 
     background: #333; 
     flex-wrap: wrap;
+    -webkit-animation: slideIn 1s ease-in-out;
+    -moz-animation: slideIn 1s ease-in-out;
+    -o-animation: slideIn 1s ease-in-out;
     animation: slideIn 1s ease-in-out;
 }
 nav a { 
@@ -38,6 +44,9 @@ nav a:hover {
     display: flex; 
     align-items: center; 
     justify-content: center; 
+    -webkit-animation: zoomIn 2s ease-in-out;
+    -moz-animation: zoomIn 2s ease-in-out;
+    -o-animation: zoomIn 2s ease-in-out;
     animation: zoomIn 2s ease-in-out;
 }
 .hero h1 { 
@@ -49,6 +58,9 @@ nav a:hover {
 }
 .services, .testimonials { 
     margin: 2em 0; 
+    -webkit-animation: fadeInUp 1s ease-in-out;
+    -moz-animation: fadeInUp 1s ease-in-out;
+    -o-animation: fadeInUp 1s ease-in-out;
     animation: fadeInUp 1s ease-in-out;
 }
 footer { 
@@ -56,6 +68,9 @@ footer {
     color: #fff; 
     text-align: center; 
     padding: 1em 0; 
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -77,9 +92,39 @@ footer {
 }
 
 /* Animations */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@-webkit-keyframes slideIn {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slideIn {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(0); }
+}
+
+@-o-keyframes slideIn {
+    from { -o-transform: translateX(-100%); }
+    to { -o-transform: translateX(0); }
 }
 
 @keyframes slideIn {
@@ -87,13 +132,42 @@ footer {
     to { transform: translateX(0); }
 }
 
+@-webkit-keyframes zoomIn {
+    from { -webkit-transform: scale(0.5); }
+    to { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes zoomIn {
+    from { -moz-transform: scale(0.5); }
+    to { -moz-transform: scale(1); }
+}
+
+@-o-keyframes zoomIn {
+    from { -o-transform: scale(0.5); }
+    to { -o-transform: scale(1); }
+}
+
 @keyframes zoomIn {
     from { transform: scale(0.5); }
     to { transform: scale(1); }
+}
+
+@-webkit-keyframes fadeInUp {
+    from { opacity: 0; -webkit-transform: translateY(20px); }
+    to { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes fadeInUp {
+    from { opacity: 0; -moz-transform: translateY(20px); }
+    to { opacity: 1; -moz-transform: translateY(0); }
+}
+
+@-o-keyframes fadeInUp {
+    from { opacity: 0; -o-transform: translateY(20px); }
+    to { opacity: 1; -o-transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
