@@ -15,6 +15,7 @@ nav {
     display: flex; 
     justify-content: center; 
     background: #333; 
+    flex-wrap: wrap;
     animation: slideIn 1s ease-in-out;
 }
 nav a { 
@@ -22,6 +23,8 @@ nav a {
     padding: 1em; 
     text-decoration: none; 
     transition: background 0.3s ease;
+    flex: 1 1 auto;
+    text-align: center;
 }
 nav a:hover { 
     background: #555; 
@@ -29,7 +32,7 @@ nav a:hover {
 .hero { 
     background: url('images/hero-image.jpg') no-repeat center center; 
     background-size: cover; 
-    height: 1000px; 
+    height: 300px; 
     text-align: center; 
     color: #fff; 
     display: flex; 
@@ -38,10 +41,11 @@ nav a:hover {
     animation: zoomIn 2s ease-in-out;
 }
 .hero h1 { 
-    font-size: 3em; 
+    font-size: 2em; 
+    padding: 0 1em;
 }
 .content { 
-    padding: 2em; 
+    padding: 1em; 
 }
 .services, .testimonials { 
     margin: 2em 0; 
@@ -53,6 +57,23 @@ footer {
     text-align: center; 
     padding: 1em 0; 
     animation: fadeIn 2s ease-in-out;
+}
+
+/* Media Queries for Mobile */
+@media (min-width: 600px) {
+    nav a {
+        flex: none;
+        padding: 1em 2em;
+    }
+    .hero {
+        height: 400px;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .content {
+        padding: 2em;
+    }
 }
 
 /* Animations */
